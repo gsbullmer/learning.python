@@ -1,7 +1,9 @@
-# Local, Enclosing and Global
+"""Local, Enclosing and Global"""
+
 
 def enclosing_func():
     m = 13
+
     def local():
         # m doesn't belong to the scope defined by the local
         # function so Python will keep looking into the next

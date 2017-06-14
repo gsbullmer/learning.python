@@ -1,4 +1,5 @@
-# Local versus Global
+"""Local versus Global"""
+
 
 def local():
     # m doesn't belong to the scope defined by the local function
