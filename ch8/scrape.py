@@ -31,10 +31,12 @@ def _fetch_images(soup, base_url):
 def _filter_images(images, type_):
     if type_ == "all":
         return images
+
     ext_map = {
-        "png": ["png"],
-        "jpg": ["jpg", "jpeg"],
+        "png": [".png"],
+        "jpg": [".jpg", ".jpeg"],
     }
+
     return [
         img for img in images
         if _matches_extension(img["name"], ext_map[type_])
